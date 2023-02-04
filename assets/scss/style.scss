@@ -254,6 +254,119 @@ main{
             }
         }
     }
+    #about{
+        height: 100vh; 
+        .about-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .about-title{
+                width: 100%;
+                @include flex-between();
+                h4{
+                    font-weight: 700;
+                    font-size: 48px;
+                    color: #1D2B4F;
+                }
+                p{
+                    font-size: 18px;
+                    color: #5C6680;
+                    width: 500px;
+                }
+            }
+            .about-nav{
+                margin-top: 100px;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                .about-nav-title{
+                    width: 90%;
+                   display: flex;
+                   flex-wrap: wrap;
+                   li{
+                    padding: 40px 30px;
+                    a{
+                    font-weight: 600;
+                    font-size: 24px;
+                    letter-spacing: -0.02em;
+                    text-transform: capitalize;
+                    color: #788093;
+                    }
+                    &:hover a{
+                        color: #1D2B4F;
+                    }
+                    &:hover{
+                        background: #FEF4F1;
+                    border-radius: 15px 15px 0px 0px;
+                    }
+                   }
+                   .active{
+                    background: #FEF4F1;
+                    border-radius: 15px 15px 0px 0px;
+                    padding: 40px 30px;
+                     a{
+                        color: $dark-blue;
+                     }
+                   }
+                }
+                .about-nav-icon{
+                    width: 10%;
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        margin-left: 25px;
+                        a{
+                            color: #788093;
+                            font-size: 24px;
+                        }
+                     &:hover a{
+                        color: $orange;
+                     }   
+                    }
+                }
+            }
+            .about-text-img{
+                width: 100%;
+                display: flex;
+                background: #FEF4F1;
+                justify-content: space-around;
+                align-items: center;
+                .about-text{
+                    width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    h3{
+                        margin-top: 100px;
+                        text-transform: capitalize;
+                        font-weight: 800;
+                        font-size: 36px;
+                        color: #1D2B4F;
+                    }
+                    h4{
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #1D2B4F;
+                        margin: 30px 0;
+                    }
+                    p{
+                        font-size: 18px;
+                        color: #5C6680;
+                        margin-bottom: 70px;
+                    }
+                }
+                .about-img{
+                    width: 35%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -291,6 +404,7 @@ main{
             }
         }
         #home{
+            height: auto;
             .home-content{
                 h4{
                     width: 100%;
@@ -305,9 +419,58 @@ main{
                 }
             }
         }
+        #about{
+            height: 100vh; 
+            .about-content{
+                .about-title{
+                    flex-direction: column;
+                    p{
+                        margin-top: 10px;
+                        width: 100%;
+                    }
+                }
+                .about-nav{
+                    margin-top: 10px;
+                    height: auto;
+                    display: flex;
+                    .about-nav-title{
+                        width: 100%;
+                       li{
+                        padding: 10px;
+                       }
+                       .active{
+                        background: white;
+                        padding: 10px;
+                       }
+                    }
+                    .about-nav-icon{
+                       display: none;
+                       
+                    }
+                }
+                .about-text-img{
+                    justify-content: flex-start;
+                    .about-text{
+                        width: 100%;                       
+                        h3{
+                            margin-top: 10px;
+                        }
+                        p{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .about-img{
+                        display: none;
+                    }
+                }
+            }
+        }
+       
     }
 }
 
+
+//responsiv tablet
 @media screen and (min-width:480px) and (max-width:768px){
     main{
         #entrance{
@@ -325,8 +488,10 @@ main{
             }
         }
         #home{
+            height: auto;
             .home-content{
                 h4{
+                   
                     width: 100%;
                     font-size: 40px;
                 }
@@ -334,6 +499,108 @@ main{
                     .home-card-item{
                         width: 100%;
                         margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        #about{
+            height: 100vh; 
+            .about-content{
+                .about-title{
+                    flex-direction: column;
+                    p{
+                        margin-top: 10px;
+                        width: 100%;
+                    }
+                }
+                .about-nav{
+                    margin-top: 10px;
+                    height: auto;
+                    display: flex;
+                    .about-nav-title{
+                        width: 100%;
+                       li{
+                        padding: 10px;
+                       }
+                       .active{
+                        background: white;
+                        padding: 10px;
+                       }
+                    }
+                    .about-nav-icon{
+                       display: none;
+                       
+                    }
+                }
+                .about-text-img{
+                    justify-content: flex-start;
+                    .about-text{
+                        width: 100%;                       
+                        h3{
+                            margin-top: 10px;
+                        }
+                        p{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .about-img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//responsiv laptop 
+@media screen and (min-width:769px) and (max-width:1023px){
+    main{
+        #home{
+            height: auto;
+        }
+        #about{
+            margin-top: 20px;
+            height: 100vh; 
+            .about-content{
+                .about-title{
+                    flex-direction: column;
+                    p{
+                        margin-top: 10px;
+                        width: 100%;
+                    }
+                }
+                .about-nav{
+                    margin-top: 10px;
+                    height: auto;
+                    display: flex;
+                    .about-nav-title{
+                        width: 100%;
+                       li{
+                        padding: 10px;
+                       }
+                       .active{
+                        background: white;
+                        padding: 10px;
+                       }
+                    }
+                    .about-nav-icon{
+                       display: none;
+                       
+                    }
+                }
+                .about-text-img{
+                    justify-content: flex-start;
+                    .about-text{
+                        width: 100%;                       
+                        h3{
+                            margin-top: 10px;
+                        }
+                        p{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .about-img{
+                        display: none;
                     }
                 }
             }
