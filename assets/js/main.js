@@ -61,3 +61,15 @@ age.length=="" && password.length==""){
     sign.style.left="-100%";
    })
 //signupa click olduqda
+
+
+let nav=document.querySelectorAll(".menu-item");
+nav.forEach((e)=>{
+  e.addEventListener("click",()=>{
+    let menu= document.querySelector(".active");
+    menu.classList.remove("active");
+    menu.classList.add("deactive");
+  })
+})
+
+//menunun lilerine click olduqda

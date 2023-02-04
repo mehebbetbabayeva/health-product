@@ -193,6 +193,67 @@ main{
             }
         }
     }
+    #home{
+        height: 100vh;
+        .home-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                margin-top: 50px;
+                text-align: center;
+                letter-spacing: -0.04em;
+                font-weight: 700;
+                font-size: 48px;
+                color: $dark-blue;
+                width: 800px;
+            }
+            .home-card{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                flex-wrap: wrap;
+                .home-card-item{
+                    width: 291px;
+                    height: 251px;
+                    background: #FFFFFF;
+                    border: 1px solid #E5E6E8;
+                    @include flex-center();
+                    flex-direction: column;
+                    p{
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: $dark-blue;
+                        letter-spacing: -0.02em;
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
+                    .card-icon{
+                        width: 66px;
+                        height: 66px;
+                        border-radius: 50%;
+                        @include flex-center();
+                        margin-bottom: 30px;
+                    }
+                    .pink{
+                        background-color:  rgba(251, 103, 57, 0.1);;
+                    }
+                    .green{
+                       background-color:  rgba(14, 189, 244, 0.1);
+                    }
+                    .blue{
+                        background: rgba(84, 137, 243, 0.12);
+                    }
+                    .red{
+                        background: rgba(248, 52, 202, 0.1);
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -229,6 +290,21 @@ main{
                 }
             }
         }
+        #home{
+            .home-content{
+                h4{
+                    width: 100%;
+                    font-size: 40px;
+                }
+                .home-card{
+                    
+                    .home-card-item{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -245,6 +321,20 @@ main{
                 }
                 .entrance-image{
                     display: none;
+                }
+            }
+        }
+        #home{
+            .home-content{
+                h4{
+                    width: 100%;
+                    font-size: 40px;
+                }
+                .home-card{
+                    .home-card-item{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }

@@ -190,6 +190,71 @@ main #entrance .entrance-content .entrance-image {
 main #entrance .entrance-content .entrance-image img {
   width: 68%;
 }
+main #home {
+  height: 100vh;
+}
+main #home .home-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #home .home-content h4 {
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  font-size: 48px;
+  color: #1D2B4F;
+  width: 800px;
+}
+main #home .home-content .home-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+main #home .home-content .home-card .home-card-item {
+  width: 291px;
+  height: 251px;
+  background: #FFFFFF;
+  border: 1px solid #E5E6E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #home .home-content .home-card .home-card-item p {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1D2B4F;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+main #home .home-content .home-card .home-card-item .card-icon {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main #home .home-content .home-card .home-card-item .pink {
+  background-color: rgba(251, 103, 57, 0.1);
+}
+main #home .home-content .home-card .home-card-item .green {
+  background-color: rgba(14, 189, 244, 0.1);
+}
+main #home .home-content .home-card .home-card-item .blue {
+  background: rgba(84, 137, 243, 0.12);
+}
+main #home .home-content .home-card .home-card-item .red {
+  background: rgba(248, 52, 202, 0.1);
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header .header-content .header-logo {
@@ -216,6 +281,14 @@ main #entrance .entrance-content .entrance-image img {
   main #entrance .entrance-content .entrance-image {
     display: none;
   }
+  main #home .home-content h4 {
+    width: 100%;
+    font-size: 40px;
+  }
+  main #home .home-content .home-card .home-card-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   main #entrance .entrance-content {
@@ -229,5 +302,13 @@ main #entrance .entrance-content .entrance-image img {
   }
   main #entrance .entrance-content .entrance-image {
     display: none;
+  }
+  main #home .home-content h4 {
+    width: 100%;
+    font-size: 40px;
+  }
+  main #home .home-content .home-card .home-card-item {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
