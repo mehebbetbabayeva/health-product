@@ -129,6 +129,7 @@ header .header-content .deactive {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 111;
 }
 .sign .form {
   width: 500px;
