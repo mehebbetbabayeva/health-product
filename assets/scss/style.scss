@@ -494,6 +494,91 @@ color: #1D2B4F
         }
     }
 }
+footer{
+    height: 100vh;
+    .footer-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-top{
+            width: 80%;
+            height: 330px;
+            background-color: #F5EEE1;
+            @include flex-center();
+            flex-direction: column;
+            h2{
+                width: 350px;
+                font-weight: 700;
+font-size: 32px;
+text-transform: capitalize;
+color: #1D2B4F;
+            }
+            .email-btn{
+                margin-top: 50px;
+                width: 50%;
+                border: 1px solid #FF6B00;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                input{
+                    background-color: #F5EEE1;
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .footer-bottom{
+            padding-top: 80px;
+            height: 320px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .footer-logo{
+                display: flex;
+                flex-direction: column;
+                .logo{
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                p{
+                    width: 300px;
+                    font-size: 18px;
+                    color: #5C6680;
+                }
+            }
+            .footer-nav{
+               
+                display: flex;
+                flex-direction: column;
+            
+                h4{
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #1D2B4F;
+                    margin-bottom: 10px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        margin-bottom: 10px;
+                        a{
+                            text-transform: capitalize;
+
+                            color: #5C6680;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 //responsive mobil 
@@ -642,6 +727,37 @@ color: #1D2B4F
         }
        
     }
+    footer{
+        height: auto;
+        .footer-content{
+            height: auto;
+            .footer-top{
+                margin-top: 20px;
+                width: 100%;
+                h2{
+                    width: 100%;
+                }
+                .email-btn{
+                    border: none;
+                    width: 100%;
+                    flex-direction: column;
+                    input{
+                        padding: 10px;
+                       border: 1px solid #FF6B00;
+                       width: 100%;
+                       margin-bottom:20px ;
+                    }
+                }
+            }
+            .footer-bottom{
+                flex-direction: column;
+                .footer-logo{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -776,6 +892,26 @@ color: #1D2B4F
             }
         }
     }
+    footer{
+        height: auto;
+        .footer-content{
+            height: auto;
+            .footer-top{
+                margin-top: 20px;
+                width: 100%;
+                .email-btn{
+                    width: 100%;
+                }
+            }
+            .footer-bottom{
+                flex-direction: column;
+                .footer-logo{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
 }
 
 //responsiv laptop 
@@ -866,10 +1002,33 @@ color: #1D2B4F
             }
         }
        #doctors{
+        height: auto;
         .doctors-card-item{
+            height: auto;
             margin-bottom: 20px;
         }
        }
+    }
+    footer{
+        height: auto;
+        .footer-content{
+            height: auto;
+            .footer-top{
+                margin-top: 20px;
+                width: 100%;
+                .email-btn{
+                    width: 100%;
+                }
+            }
+            .footer-bottom{
+                justify-content: space-between;
+                flex-direction: row;
+                .footer-logo{
+                    
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
 }
 
