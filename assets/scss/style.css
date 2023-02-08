@@ -201,9 +201,9 @@ main #home .home-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
 main #home .home-content h4 {
-  margin-top: 50px;
   text-align: center;
   letter-spacing: -0.04em;
   font-weight: 700;
@@ -445,6 +445,52 @@ main #service .service-content .service-text .service-item p .out .in {
 main #service .service-content .service-text .orange-btn {
   margin-top: 60px;
 }
+main #doctors {
+  height: 100vh;
+}
+main #doctors .doctors-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #doctors .doctors-content h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #1D2B4F;
+}
+main #doctors .doctors-content .doctors-card {
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+main #doctors .doctors-content .doctors-card .doctors-card-item {
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #F2BABA;
+  height: auto;
+}
+main #doctors .doctors-content .doctors-card .doctors-card-item .card-title .name, main #doctors .doctors-content .doctors-card .doctors-card-item .card-title .job {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+main #doctors .doctors-content .doctors-card .doctors-card-item .card-title .name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1D2B4F;
+}
+main #doctors .doctors-content .doctors-card .doctors-card-item .card-title .job {
+  color: #5C6680;
+  font-size: 18px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header .header-content .header-logo {
@@ -459,7 +505,11 @@ main #service .service-content .service-text .orange-btn {
   header .header-content .menubar {
     display: block;
   }
+  main #entrance {
+    height: auto;
+  }
   main #entrance .entrance-content {
+    height: auto;
     flex-direction: column;
   }
   main #entrance .entrance-content .entrance-title {
@@ -477,6 +527,7 @@ main #service .service-content .service-text .orange-btn {
   main #home .home-content h4 {
     width: 100%;
     font-size: 40px;
+    text-align: left;
   }
   main #home .home-content .home-card .home-card-item {
     width: 100%;
@@ -555,9 +606,28 @@ main #service .service-content .service-text .orange-btn {
   main #service .service-content .service-text .orange-btn {
     margin-top: 20px;
   }
+  main #doctors {
+    height: auto;
+  }
+  main #doctors .doctors-content {
+    height: auto;
+  }
+  main #doctors .doctors-content .doctors-card {
+    width: 100%;
+  }
+  main #doctors .doctors-content .doctors-card .doctors-card-item {
+    margin-bottom: 20px;
+  }
+  main #doctors .doctors-content .doctors-card .doctors-card-item img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  main #entrance {
+    height: auto;
+  }
   main #entrance .entrance-content {
+    height: auto;
     flex-direction: column;
   }
   main #entrance .entrance-content .entrance-title {
@@ -655,6 +725,21 @@ main #service .service-content .service-text .orange-btn {
   }
   main #service .service-content .service-text .orange-btn {
     margin-top: 20px;
+  }
+  main #doctors {
+    height: auto;
+  }
+  main #doctors .doctors-content {
+    height: auto;
+  }
+  main #doctors .doctors-content .doctors-card {
+    width: 100%;
+  }
+  main #doctors .doctors-content .doctors-card .doctors-card-item {
+    margin-bottom: 20px;
+  }
+  main #doctors .doctors-content .doctors-card .doctors-card-item img {
+    width: 100%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -737,6 +822,9 @@ main #service .service-content .service-text .orange-btn {
   }
   main #service .service-content .service-text .orange-btn {
     margin-top: 20px;
+  }
+  main #doctors .doctors-card-item {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -821,5 +909,8 @@ main #service .service-content .service-text .orange-btn {
   }
   main #service .service-content .service-text .orange-btn {
     margin-top: 20px;
+  }
+  main #doctors .doctors-card-item {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

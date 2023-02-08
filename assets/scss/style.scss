@@ -162,6 +162,7 @@ main{
         margin-top: 90px;
         height: 100vh;
         .entrance-content{
+           
             height: 100vh;
             width: 100%;
             display: flex;
@@ -203,8 +204,9 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-top: 20px;
             h4{
-                margin-top: 50px;
+            
                 text-align: center;
                 letter-spacing: -0.04em;
                 font-weight: 700;
@@ -443,6 +445,54 @@ color: #1D2B4F;
             }
         }
     }
+    #doctors{
+        height: 100vh;
+        .doctors-content{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                margin-bottom: 30px;
+                font-weight: 700;
+font-size: 48px;
+text-transform: capitalize;
+text-align: center;
+color: #1D2B4F
+            }
+            .doctors-card{
+                margin-bottom: 40px;
+                flex-wrap: wrap;
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                .doctors-card-item{
+                    border-radius: 10px;
+                    padding: 20px;
+                    border: 1px solid #F2BABA;
+                    height: auto;
+                    .card-title{
+                        .name , .job{
+                            text-align: center;
+                            text-transform: capitalize;
+                            margin-top: 10px;
+                        }
+                        .name{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: #1D2B4F;
+                        }
+                        .job{
+                            color: #5C6680;
+                            font-size: 18px;
+                        }
+                    }
+                }    
+            }
+        }
+    }
 }
 
 
@@ -466,7 +516,9 @@ color: #1D2B4F;
     }
     main{
         #entrance{
+            height: auto;
            .entrance-content{
+            height: auto;
                 flex-direction: column;
                 .entrance-title{
                     width: 100%;
@@ -485,6 +537,7 @@ color: #1D2B4F;
                 h4{
                     width: 100%;
                     font-size: 40px;
+                    text-align: left;
                 }
                 .home-card{
                     
@@ -572,6 +625,21 @@ color: #1D2B4F;
 
             }
         }
+        #doctors{
+            height: auto;
+            .doctors-content{
+                height: auto;
+                .doctors-card{
+                    width:100%;
+                    .doctors-card-item{
+                        margin-bottom: 20px;
+                       img {
+                        width: 100%;
+                        }
+                    }
+                }
+            }
+        }
        
     }
 }
@@ -581,7 +649,9 @@ color: #1D2B4F;
 @media screen and (min-width:480px) and (max-width:768px){
     main{
         #entrance{
+            height: auto;
            .entrance-content{
+            height: auto;
                 flex-direction: column;
                 .entrance-title{
                     width: 100%;
@@ -690,6 +760,21 @@ color: #1D2B4F;
 
             }
         }
+        #doctors{
+            height: auto;
+            .doctors-content{
+                height: auto;
+                .doctors-card{
+                    width:100%;
+                    .doctors-card-item{
+                        margin-bottom: 20px;
+                       img {
+                        width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -780,6 +865,11 @@ color: #1D2B4F;
 
             }
         }
+       #doctors{
+        .doctors-card-item{
+            margin-bottom: 20px;
+        }
+       }
     }
 }
 
@@ -874,5 +964,10 @@ color: #1D2B4F;
 
             }
         }
+        #doctors{
+            .doctors-card-item{
+                margin-bottom: 20px;
+            }
+           }
     }
 }
