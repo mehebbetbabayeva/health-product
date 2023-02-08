@@ -23,6 +23,7 @@
   outline: none;
   font-size: 18px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 header {
@@ -32,6 +33,7 @@ header {
   left: 0;
   top: 0;
   background-color: white;
+  z-index: 100;
 }
 header .header-content {
   display: flex;
@@ -256,7 +258,7 @@ main #home .home-content .home-card .home-card-item .red {
   background: rgba(248, 52, 202, 0.1);
 }
 main #about {
-  height: 100vh;
+  height: auto;
 }
 main #about .about-content {
   width: 100%;
@@ -344,6 +346,9 @@ main #about .about-content .about-text-img .about-text {
   display: flex;
   flex-direction: column;
 }
+main #about .about-content .about-text-img .about-text .orange-btn {
+  margin-bottom: 40px;
+}
 main #about .about-content .about-text-img .about-text h3 {
   margin-top: 100px;
   text-transform: capitalize;
@@ -368,6 +373,77 @@ main #about .about-content .about-text-img .about-img {
 }
 main #about .about-content .about-text-img .about-img img {
   width: 100%;
+}
+main #service {
+  height: 100vh;
+}
+main #service .service-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main #service .service-content .service-img {
+  display: flex;
+  justify-content: flex-end;
+  width: 550px;
+  height: 550px;
+  background: #FFDFC5;
+}
+main #service .service-content .service-img img {
+  width: 80%;
+}
+main #service .service-content .service-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+main #service .service-content .service-text h2 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #1D2B4F;
+}
+main #service .service-content .service-text p {
+  font-size: 18px;
+  color: #5C6680;
+  margin: 40px 0;
+}
+main #service .service-content .service-text .service-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200px;
+}
+main #service .service-content .service-text .service-item p {
+  width: 50%;
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+  color: #131E3A;
+}
+main #service .service-content .service-text .service-item p .out {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #service .service-content .service-text .service-item p .out .in {
+  width: 10px;
+  height: 10px;
+  background-color: #131E3A;
+  border-radius: 50%;
+}
+main #service .service-content .service-text .orange-btn {
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -407,7 +483,7 @@ main #about .about-content .about-text-img .about-img img {
     margin-bottom: 10px;
   }
   main #about {
-    height: 100vh;
+    height: auto;
   }
   main #about .about-content .about-title {
     flex-direction: column;
@@ -448,6 +524,36 @@ main #about .about-content .about-text-img .about-img img {
   }
   main #about .about-content .about-text-img .about-img {
     display: none;
+  }
+  main #service {
+    height: auto;
+  }
+  main #service .service-content {
+    height: auto;
+  }
+  main #service .service-content .service-img {
+    width: 100%;
+    height: 300px;
+  }
+  main #service .service-content .service-text {
+    width: 100%;
+  }
+  main #service .service-content .service-text h2 {
+    font-size: 30px;
+  }
+  main #service .service-content .service-text p {
+    margin: 10px 0;
+  }
+  main #service .service-content .service-text .service-item {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  main #service .service-content .service-text .service-item p {
+    width: 100%;
+  }
+  main #service .service-content .service-text .orange-btn {
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -475,7 +581,7 @@ main #about .about-content .about-text-img .about-img img {
     margin-bottom: 10px;
   }
   main #about {
-    height: 100vh;
+    height: auto;
   }
   main #about .about-content .about-title {
     flex-direction: column;
@@ -516,6 +622,39 @@ main #about .about-content .about-text-img .about-img img {
   }
   main #about .about-content .about-text-img .about-img {
     display: none;
+  }
+  main #service {
+    height: auto;
+  }
+  main #service .service-content {
+    height: auto;
+  }
+  main #service .service-content .service-img {
+    width: 100%;
+    height: 400px;
+  }
+  main #service .service-content .service-img img {
+    width: 70%;
+  }
+  main #service .service-content .service-text {
+    width: 100%;
+  }
+  main #service .service-content .service-text h2 {
+    font-size: 30px;
+  }
+  main #service .service-content .service-text p {
+    margin: 10px 0;
+  }
+  main #service .service-content .service-text .service-item {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  main #service .service-content .service-text .service-item p {
+    width: 100%;
+  }
+  main #service .service-content .service-text .orange-btn {
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -524,7 +663,7 @@ main #about .about-content .about-text-img .about-img img {
   }
   main #about {
     margin-top: 20px;
-    height: 100vh;
+    height: auto;
   }
   main #about .about-content .about-title {
     flex-direction: column;
@@ -565,5 +704,122 @@ main #about .about-content .about-text-img .about-img img {
   }
   main #about .about-content .about-text-img .about-img {
     display: none;
+  }
+  main #service {
+    height: auto;
+  }
+  main #service .service-content {
+    height: auto;
+  }
+  main #service .service-content .service-img {
+    width: 100%;
+    height: 400px;
+  }
+  main #service .service-content .service-img img {
+    width: 70%;
+  }
+  main #service .service-content .service-text {
+    width: 100%;
+  }
+  main #service .service-content .service-text h2 {
+    font-size: 30px;
+  }
+  main #service .service-content .service-text p {
+    margin: 10px 0;
+  }
+  main #service .service-content .service-text .service-item {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  main #service .service-content .service-text .service-item p {
+    width: 100%;
+  }
+  main #service .service-content .service-text .orange-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  main #home {
+    height: auto;
+  }
+  main #about {
+    margin-top: 20px;
+    height: auto;
+  }
+  main #about .about-content .about-title {
+    flex-direction: column;
+  }
+  main #about .about-content .about-title p {
+    margin-top: 10px;
+    width: 100%;
+  }
+  main #about .about-content .about-nav {
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+  }
+  main #about .about-content .about-nav .about-nav-title {
+    width: 100%;
+  }
+  main #about .about-content .about-nav .about-nav-title li {
+    padding: 10px;
+  }
+  main #about .about-content .about-nav .about-nav-title .active {
+    background: white;
+    padding: 10px;
+  }
+  main #about .about-content .about-nav .about-nav-icon {
+    display: none;
+  }
+  main #about .about-content .about-text-img {
+    justify-content: flex-start;
+  }
+  main #about .about-content .about-text-img .about-text {
+    width: 100%;
+  }
+  main #about .about-content .about-text-img .about-text h3 {
+    margin-top: 10px;
+  }
+  main #about .about-content .about-text-img .about-text p {
+    margin-bottom: 20px;
+  }
+  main #about .about-content .about-text-img .about-img {
+    display: none;
+  }
+  main #service {
+    height: auto;
+  }
+  main #service .service-content {
+    height: auto;
+  }
+  main #service .service-content .service-img {
+    width: 70%;
+    height: 400px;
+  }
+  main #service .service-content .service-img img {
+    width: 70%;
+  }
+  main #service .service-content .service-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  main #service .service-content .service-text h2 {
+    font-size: 40px;
+  }
+  main #service .service-content .service-text p {
+    margin: 10px 0;
+  }
+  main #service .service-content .service-text .service-item {
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+  }
+  main #service .service-content .service-text .service-item p {
+    width: 50%;
+  }
+  main #service .service-content .service-text .orange-btn {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
